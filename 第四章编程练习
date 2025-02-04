@@ -1,0 +1,26 @@
+第四章
+第一题
+#include <iostream>
+using namespace std;
+int main()
+{
+	char ary1[20];
+	char ary2[20];
+	char ary3;
+	int ary4=0;
+	cout << "What is your first name?";
+	cin.getline(ary1,20);
+
+	cout << "What is your last name?";
+	cin >> ary2;
+
+	cout << "What letter grade do you deserve?";
+	cin >> ary3;
+
+	cout << "What is your age?";
+	cin >> ary4;
+
+	cout << "Name: " << ary2 << ", " << ary1 << endl;
+	cout << "Grade:" << char(int(ary3) + 1) << endl;
+	cout << "Age:" << ary4 << endl;
+}
